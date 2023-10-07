@@ -8,6 +8,7 @@ public class helloProj {
 
         System.out.println("Как тебя зовут?");
         String name = scanner.nextLine();
+
         System.out.println("Привет, " + name + "!");
         scanner.close();
 
