@@ -73,7 +73,6 @@ public class helloProj {
         int workdays = 0;
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(startDate);
-
         while (calendar.getTime().before(endDate) || calendar.getTime().equals(endDate)) {
             int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
             if (dayOfWeek != Calendar.SATURDAY && dayOfWeek != Calendar.SUNDAY) {
