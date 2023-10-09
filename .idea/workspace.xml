@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="811d8ebc-e115-484c-ada7-24377be63a42" name="Changes" comment="module2_q1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helloProj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helloProj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -28,12 +34,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="helloProj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="helloProj" />
@@ -44,6 +50,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.helloProj" />
+        <item itemvalue="Application.helloProj" />
         <item itemvalue="Application.helloProj" />
       </list>
     </recent_temporary>
@@ -87,6 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="module2_q1" />
-    <option name="LAST_COMMIT_MESSAGE" value="module2_q1" />
+    <MESSAGE value="module2_q2" />
+    <option name="LAST_COMMIT_MESSAGE" value="module2_q2" />
   </component>
 </project>
