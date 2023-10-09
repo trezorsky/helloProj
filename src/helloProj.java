@@ -1,3 +1,6 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class helloProj {
@@ -8,14 +11,14 @@ public class helloProj {
         System.out.print("Введите дату в формате dd.mm.yyyy: ");
         String dateString = scanner.nextLine();
 
-        String[] parts = dateString.split("\\.");
-        if (parts.length == 3) {
-            String year = parts[2];
-            String month = parts[1];
-            String day = parts[0];
-            String formattedDate = year + "-" + month + "-" + day;
+        SimpleDateFormat inputFormat = new SimpleDateFormat("dd.MM.yyyy");
+        SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+        try {
+            Date date = inputFormat.parse(dateString);
+            String formattedDate = outputFormat.format(date);
             System.out.println("Преобразованная дата: " + formattedDate);
-        } else {
+        } catch (ParseException e) {
             System.out.println("Некорректный формат даты.");
         }
 
