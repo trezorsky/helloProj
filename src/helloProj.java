@@ -6,7 +6,6 @@ public class helloProj {
 
         int[] array = new int[20];
         Random random = new Random();
-
         // от 1 до 15
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(15) + 1;
