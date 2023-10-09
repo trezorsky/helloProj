@@ -6,9 +6,9 @@ public class helloProj {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Как тебя зовут?");
+        System.out.println("РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?");
         String name = scanner.nextLine();
-        System.out.println("Привет, " + name + "!");
+        System.out.println("РџСЂРёРІРµС‚, " + name + "!");
         scanner.close();
 
     }
