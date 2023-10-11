@@ -70,17 +70,25 @@ public class helloProj {
 
     // ћетод дл€ подсчета рабочих дней между двум€ датами
     public static int countWorkdaysBetweenDates(Date startDate, Date endDate) {
-        int workdays = 0;
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(startDate);
-        while (calendar.getTime().before(endDate) || calendar.getTime().equals(endDate)) {
-            int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-            if (dayOfWeek != Calendar.SATURDAY && dayOfWeek != Calendar.SUNDAY) {
-                workdays++;
-            }
-            calendar.add(Calendar.DAY_OF_YEAR, 1);
+        Calendar startCalendar = Calendar.getInstance();
+        Calendar endCalendar = Calendar.getInstance();
+        startCalendar.setTime(startDate);
+        endCalendar.setTime(endDate);
+
+        if (startCalendar.after(endCalendar)) {
+            Calendar temp = startCalendar;
+            startCalendar = endCalendar;
+            endCalendar = temp;
         }
 
+        int workdays = 0;
+        while (startCalendar.before(endCalendar)) {
+            startCalendar.add(Calendar.DAY_OF_MONTH, 1);
+            if (startCalendar.get(Calendar.DAY_OF_WEEK) != Calendar.SATURDAY &&
+                    startCalendar.get(Calendar.DAY_OF_WEEK) != Calendar.SUNDAY) {
+                workdays++;
+            }
+        }
         return workdays;
     }
 }
