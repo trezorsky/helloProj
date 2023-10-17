@@ -11,10 +11,10 @@ public class helloProj {
         List<User> userList = new ArrayList<>();
 
         for (int i = 0; i < 5; i++) {
-            System.out.print("Введите имя пользователя: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: ");
             String name = scanner.nextLine();
 
-            System.out.print("Введите возраст пользователя: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: ");
             int age = scanner.nextInt();
             scanner.nextLine();
 
@@ -22,7 +22,7 @@ public class helloProj {
             userList.add(user);
         }
 
-        // Сортировка списка пользователей по возрастанию возраста
+        // РЎРѕСЂС‚РёСЂРѕРІРєР° СЃРїРёСЃРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ РІРѕР·СЂР°СЃС‚Р°
         Collections.sort(userList, new Comparator<User>() {
             @Override
             public int compare(User user1, User user2) {
@@ -30,7 +30,7 @@ public class helloProj {
             }
         });
 
-        // Вывод отсортированного списка пользователей
+        // Р’С‹РІРѕРґ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅРѕРіРѕ СЃРїРёСЃРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
         for (User user : userList) {
             System.out.println(user.toString());
         }
@@ -64,6 +64,6 @@ class User {
 
     @Override
     public String toString() {
-        return name + ", возраст " + age + " лет";
+        return name + ", ГўГ®Г§Г°Г Г±ГІ " + age + " Г«ГҐГІ";
     }
 }
