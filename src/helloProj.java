@@ -16,7 +16,6 @@ public class helloProj {
             scanner.nextLine();
 
             User user = new User(name, age);
-
             // ѕровер€ем, есть ли уже список дл€ данного возраста
             List<User> userList = userMap.get(age);
 
