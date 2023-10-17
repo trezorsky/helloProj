@@ -6,30 +6,30 @@ import java.util.Scanner;
 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.print("Введите имя первого пользователя: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРµСЂРІРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: ");
             String name1 = scanner.nextLine();
 
-            System.out.print("Введите возраст первого пользователя: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ РїРµСЂРІРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: ");
             int age1 = scanner.nextInt();
-            scanner.nextLine(); //  следующая строка
+            scanner.nextLine(); //  СЃР»РµРґСѓСЋС‰Р°СЏ СЃС‚СЂРѕРєР°
 
             User user1 = new User(name1, age1);
 
-            System.out.print("Введите имя второго пользователя: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РёРјСЏ РІС‚РѕСЂРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: ");
             String name2 = scanner.nextLine();
 
-            System.out.print("Введите возраст второго пользователя: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ РІС‚РѕСЂРѕРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: ");
             int age2 = scanner.nextInt();
 
             User user2 = new User(name2, age2);
 
-            System.out.println("Первый пользователь: " + user1);
-            System.out.println("Второй пользователь: " + user2);
+            System.out.println("РџРµСЂРІС‹Р№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ: " + user1);
+            System.out.println("Р’С‚РѕСЂРѕР№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ: " + user2);
 
             if (user1.getAge() < user2.getAge()) {
-                System.out.println("Пользователь с наименьшим возрастом: " + user1);
+                System.out.println("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ РЅР°РёРјРµРЅСЊС€РёРј РІРѕР·СЂР°СЃС‚РѕРј: " + user1);
             } else {
-                System.out.println("Пользователь с наименьшим возрастом: " + user2);
+                System.out.println("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ РЅР°РёРјРµРЅСЊС€РёРј РІРѕР·СЂР°СЃС‚РѕРј: " + user2);
             }
         }
     }
@@ -61,7 +61,7 @@ import java.util.Scanner;
 
         @Override
         public String toString() {
-            return name + ", возраст " + age + " лет";
+            return name + ", ГўГ®Г§Г°Г Г±ГІ " + age + " Г«ГҐГІ";
         }
     }
 
