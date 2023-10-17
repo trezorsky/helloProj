@@ -11,7 +11,7 @@ import java.util.Scanner;
 
             System.out.print("Введите возраст первого пользователя: ");
             int age1 = scanner.nextInt();
-            scanner.nextLine(); // следующая строка
+            scanner.nextLine(); //  следующая строка
 
             User user1 = new User(name1, age1);
 
