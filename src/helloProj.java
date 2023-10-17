@@ -1,16 +1,13 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class helloProj {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        List<User> userList = new ArrayList<>();
+        Map<Integer, List<User>> userMap = new HashMap<>();
 
         for (int i = 0; i < 5; i++) {
+
             System.out.print("¬ведите им€ пользовател€: ");
             String name = scanner.nextLine();
 
@@ -19,20 +16,42 @@ public class helloProj {
             scanner.nextLine();
 
             User user = new User(name, age);
+
+            // ѕровер€ем, есть ли уже список дл€ данного возраста
+            List<User> userList = userMap.get(age);
+
+            if (userList == null) {
+                // ≈сли список не существует, создаем новый
+                userList = new ArrayList<>();
+                userMap.put(age, userList);
+            }
+
+            // ƒобавл€ем пользовател€ в список дл€ данного возраста
             userList.add(user);
         }
 
-        // —ортировка списка пользователей по возрастанию возраста
-        Collections.sort(userList, new Comparator<User>() {
-            @Override
-            public int compare(User user1, User user2) {
-                return user1.getAge().compareTo(user2.getAge());
-            }
-        });
+        System.out.print("¬ведите возраст дл€ поиска пользователей: ");
+        int searchAge = scanner.nextInt();
+        scanner.nextLine();
 
-        // ¬ывод отсортированного списка пользователей
-        for (User user : userList) {
-            System.out.println(user.toString());
+        List<User> usersWithSearchAge = userMap.get(searchAge);
+
+        if (usersWithSearchAge != null) {
+            // —ортируем пользователей по имени
+            Collections.sort(usersWithSearchAge, new Comparator<User>() {
+                @Override
+                public int compare(User user1, User user2) {
+                    return user1.getName().compareTo(user2.getName());
+                }
+            });
+
+            // ¬ыводим отсортированный список пользователей
+            System.out.println("ѕользователи с возрастом " + searchAge + " лет:");
+            for (User user : usersWithSearchAge) {
+                System.out.println(user.toString());
+            }
+        } else {
+            System.out.println("ѕользователей с возрастом " + searchAge + " лет не найдено.");
         }
     }
 }
