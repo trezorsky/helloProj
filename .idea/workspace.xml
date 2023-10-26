@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="811d8ebc-e115-484c-ada7-24377be63a42" name="Changes" comment="module2_q1">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+    <list default="true" id="811d8ebc-e115-484c-ada7-24377be63a42" name="Changes" comment="module3_q8">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module4_q9/Learner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module4_q9/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module4_q9/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helloProj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helloProj.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +17,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="module3_q7" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -32,7 +42,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
   <component name="RunManager">
@@ -46,10 +58,17 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.helloProj" />
+        <item itemvalue="Application.helloProj" />
+        <item itemvalue="Application.helloProj" />
+        <item itemvalue="Application.helloProj" />
+        <item itemvalue="Application.helloProj" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\egnook\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="811d8ebc-e115-484c-ada7-24377be63a42" name="Changes" comment="" />
@@ -65,7 +84,49 @@
       <option name="project" value="LOCAL" />
       <updated>1696587017824</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="module2_q6">
+      <created>1697554053679</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697554053679</updated>
+    </task>
+    <task id="LOCAL-00003" summary="module2_q6">
+      <created>1697554196714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697554196714</updated>
+    </task>
+    <task id="LOCAL-00004" summary="module2_q6">
+      <created>1697554348233</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697554348233</updated>
+    </task>
+    <task id="LOCAL-00005" summary="module3_q7">
+      <created>1697556158429</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697556158429</updated>
+    </task>
+    <task id="LOCAL-00006" summary="module3_q8">
+      <created>1697556863639</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697556863639</updated>
+    </task>
+    <task id="LOCAL-00007" summary="module3_q8">
+      <created>1697556951413</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697556951413</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,6 +142,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="module2_q1" />
-    <option name="LAST_COMMIT_MESSAGE" value="module2_q1" />
+    <MESSAGE value="module3_q6" />
+    <MESSAGE value="module3_q7" />
+    <MESSAGE value="module3_q8" />
+    <option name="LAST_COMMIT_MESSAGE" value="module3_q8" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

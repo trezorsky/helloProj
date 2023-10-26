@@ -8,35 +8,35 @@ public class helloProj {
 
         for (int i = 0; i < 5; i++) {
 
-            System.out.print("Введите имя пользователя: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РёРјСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: ");
             String name = scanner.nextLine();
 
-            System.out.print("Введите возраст пользователя: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ: ");
             int age = scanner.nextInt();
             scanner.nextLine();
 
             User user = new User(name, age);
-            // Проверяем, есть ли уже список для данного возраста
+            // РџСЂРѕРІРµСЂСЏРµРј, РµСЃС‚СЊ Р»Рё СѓР¶Рµ СЃРїРёСЃРѕРє РґР»СЏ РґР°РЅРЅРѕРіРѕ РІРѕР·СЂР°СЃС‚Р°
             List<User> userList = userMap.get(age);
 
             if (userList == null) {
-                // Если список не существует, создаем новый
+                // Р•СЃР»Рё СЃРїРёСЃРѕРє РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚, СЃРѕР·РґР°РµРј РЅРѕРІС‹Р№
                 userList = new ArrayList<>();
                 userMap.put(age, userList);
             }
 
-            // Добавляем пользователя в список для данного возраста
+            // Р”РѕР±Р°РІР»СЏРµРј РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РІ СЃРїРёСЃРѕРє РґР»СЏ РґР°РЅРЅРѕРіРѕ РІРѕР·СЂР°СЃС‚Р°
             userList.add(user);
         }
 
-        System.out.print("Введите возраст для поиска пользователей: ");
+        System.out.print("Р’РІРµРґРёС‚Рµ РІРѕР·СЂР°СЃС‚ РґР»СЏ РїРѕРёСЃРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№: ");
         int searchAge = scanner.nextInt();
         scanner.nextLine();
 
         List<User> usersWithSearchAge = userMap.get(searchAge);
 
         if (usersWithSearchAge != null) {
-            // Сортируем пользователей по имени
+            // РЎРѕСЂС‚РёСЂСѓРµРј РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РїРѕ РёРјРµРЅРё
             Collections.sort(usersWithSearchAge, new Comparator<User>() {
                 @Override
                 public int compare(User user1, User user2) {
@@ -44,13 +44,13 @@ public class helloProj {
                 }
             });
 
-            // Выводим отсортированный список пользователей
-            System.out.println("Пользователи с возрастом " + searchAge + " лет:");
+            // Р’С‹РІРѕРґРёРј РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ СЃРїРёСЃРѕРє РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
+            System.out.println("РџРѕР»СЊР·РѕРІР°С‚РµР»Рё СЃ РІРѕР·СЂР°СЃС‚РѕРј " + searchAge + " Р»РµС‚:");
             for (User user : usersWithSearchAge) {
                 System.out.println(user.toString());
             }
         } else {
-            System.out.println("Пользователей с возрастом " + searchAge + " лет не найдено.");
+            System.out.println("РџРѕР»СЊР·РѕРІР°С‚РµР»РµР№ СЃ РІРѕР·СЂР°СЃС‚РѕРј " + searchAge + " Р»РµС‚ РЅРµ РЅР°Р№РґРµРЅРѕ.");
         }
     }
 }
@@ -82,6 +82,6 @@ class User {
 
     @Override
     public String toString() {
-        return name + ", возраст " + age + " лет";
+        return name + ", РІРѕР·СЂР°СЃС‚ " + age + " Р»РµС‚";
     }
 }
