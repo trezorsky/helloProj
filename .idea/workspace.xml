@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="811d8ebc-e115-484c-ada7-24377be63a42" name="Changes" comment="module3_q8">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/module4_q9/Learner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/module4_q9/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/module4_q9/Student.java" afterDir="false" />
+    <list default="true" id="811d8ebc-e115-484c-ada7-24377be63a42" name="Changes" comment="module4_q9(sletela codirovka)">
+      <change afterPath="$PROJECT_DIR$/src/module4_q9/StudentWithTimer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helloProj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helloProj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module4_q9/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module4_q9/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module4_q9/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module4_q9/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="jbr-17" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2WNxdIzjxymKM85j3JYv58O6qwI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,10 +53,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "last_opened_file_path": "C:/Users/egnook/IdeaProjects/helloProj",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="module4_q9.Main" />
+      <module name="helloProj" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="module4_q9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="helloProj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="helloProj" />
       <module name="helloProj" />
@@ -57,7 +83,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.helloProj" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.helloProj" />
         <item itemvalue="Application.helloProj" />
         <item itemvalue="Application.helloProj" />
@@ -126,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697556951413</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="module4_q9(sletela codirovka)">
+      <created>1698324881369</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698324881369</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,7 +178,8 @@
     <MESSAGE value="module3_q6" />
     <MESSAGE value="module3_q7" />
     <MESSAGE value="module3_q8" />
-    <option name="LAST_COMMIT_MESSAGE" value="module3_q8" />
+    <MESSAGE value="module4_q9(sletela codirovka)" />
+    <option name="LAST_COMMIT_MESSAGE" value="module4_q9(sletela codirovka)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
