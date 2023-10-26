@@ -6,7 +6,7 @@ public class helloProj {
         Scanner scanner = new Scanner(System.in);
         Map<Integer, List<User>> userMap = new HashMap<>();
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++)  {
 
             System.out.print("Введите имя пользователя: ");
             String name = scanner.nextLine();
